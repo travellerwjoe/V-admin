@@ -47,6 +47,22 @@ export default {
                         {
                             name:'Dashboard v1',
                             link:'DashboardV1'
+                        },
+                        {
+                            name:'Dashboard v2',
+                            link:'DashboardV2'
+                        },
+                        {
+                            name:'Dashboard v3',
+                            link:'DashboardV3'
+                        },
+                        {
+                            name:'Dashboard v4',
+                            link:'DashboardV4'
+                        },
+                        {
+                            name:'Dashboard v5',
+                            link:'DashboardV5'
                         }
                     ]
                 }

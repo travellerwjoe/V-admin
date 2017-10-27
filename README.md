@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # v-admin
 
 > A Vue.js project
@@ -28,3 +29,7 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# V-admin
+Admin management template based on Vue.js 2.0
+>>>>>>> 4241ae6a5519f67383a995792a8f93f58b1d2099

@@ -22,14 +22,14 @@
                         </div>
                     </li>
                     <li class="active" v-for="menu in menus">
-                        <a href="index.html">
+                        <a href="javascript:;">
                             <i class="fa fa-th-large"></i> 
                             <span class="nav-label">{{menu.name}}</span> 
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level" v-if="menu.children && menu.children.length">
                             <li class="active" v-for="child in menu.children">
-                                <a href="index.html">{{child.name}}</a>
+                                <a href="javascript:;" @click="navigate(child.link)">{{child.name}}</a>
                             </li>
                         </ul>
                     </li>
@@ -257,6 +257,15 @@
 export default {
     props:{
         menus:[Array]
+    },
+    methods:{
+        navigate(view){
+            this.$emit('change',view)
+        },
+    },
+    mounted(){
+        debugger
+        $('#side-menu').metisMenu()
     }
 }
 </script>
