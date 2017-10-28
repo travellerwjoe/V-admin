@@ -43,26 +43,79 @@ export default {
             menus:[
                 {
                     name:'Dashboards',
+                    icon:'fa-th-large',
+                    active:true,
                     children:[
                         {
                             name:'Dashboard v1',
-                            link:'DashboardV1'
+                            link:'/Dashboards/DashboardV1',
+                            active:true
                         },
                         {
                             name:'Dashboard v2',
-                            link:'DashboardV2'
+                            link:'/Dashboards/DashboardV2'
                         },
                         {
                             name:'Dashboard v3',
-                            link:'DashboardV3'
+                            link:'/Dashboards/DashboardV3'
                         },
                         {
                             name:'Dashboard v4',
-                            link:'DashboardV4'
+                            link:'/Dashboards/DashboardV4'
                         },
                         {
                             name:'Dashboard v5',
-                            link:'DashboardV5'
+                            link:'/Dashboards/DashboardV5'
+                        }
+                    ]
+                },
+                {
+                    name:'UI Elements',
+                    icon:'fa-flask',
+                    children:[
+                        {
+                            name:'Typography',
+                            link:'/UI/Typography'
+                        },
+                        {
+                            name:'Icons',
+                            link:'/UI/Icons'
+                        },
+                        {
+                            name:'Draggable Panels',
+                            link:'/UI/DraggablePanels'
+                        },
+                        {
+                            name:'Resiaeable Panels',
+                            link:'/UI/ResiaeablePanels'
+                        },
+                        {
+                            name:'Buttons',
+                            link:'/UI/Buttons'
+                        },
+                        {
+                            name:'Video',
+                            link:'/UI/Video'
+                        },
+                        {
+                            name:'Panels',
+                            link:'/UI/Panels'
+                        },
+                        {
+                            name:'Tabs',
+                            link:'/UI/Tabs'
+                        },
+                        {
+                            name:'Notifications & Tooltips',
+                            link:'/UI/NotificationsTooltips'
+                        },
+                        {
+                            name:'Helper css classes',
+                            link:'/UI/HelperCssClasses'
+                        },
+                        {
+                            name:'Badge & Labels & Progress',
+                            link:'/UI/BadgeLabelsProgress'
                         }
                     ]
                 }
@@ -71,7 +124,7 @@ export default {
     },
     methods:{
         changeView(view){
-            console.log(view)
+            this.$router.push(view)
         }
     },
     components:{

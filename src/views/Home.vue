@@ -8,7 +8,7 @@
 </style>
 <script>
 import Wrapper from "@c/Wrapper"
-import {DashboardV1} from '@v/Dashboard'
+import {DashboardV1} from '@v/Dashboards'
 export default {
     data(){
         return {

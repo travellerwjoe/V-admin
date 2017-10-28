@@ -21,14 +21,14 @@
                             IN+
                         </div>
                     </li>
-                    <li class="active" v-for="menu in menus">
+                    <li :class="{'active':menu.active}" v-for="menu in menus">
                         <a href="javascript:;">
-                            <i class="fa fa-th-large"></i> 
+                            <i :class="['fa',menu.icon]"></i> 
                             <span class="nav-label">{{menu.name}}</span> 
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level" v-if="menu.children && menu.children.length">
-                            <li class="active" v-for="child in menu.children">
+                            <li :class="{'active':child.active}" v-for="child in menu.children">
                                 <a href="javascript:;" @click="navigate(child.link)">{{child.name}}</a>
                             </li>
                         </ul>
@@ -264,7 +264,6 @@ export default {
         },
     },
     mounted(){
-        debugger
         $('#side-menu').metisMenu()
     }
 }
