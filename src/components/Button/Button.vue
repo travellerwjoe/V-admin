@@ -1,12 +1,14 @@
 <template>
-    <button type="button" :class="classes" :data-toggle="single?'button':null">
-        <i :class="iconClasses" v-if="icon"></i>
-        <slot></slot>
-    </button>
+    <button :type="type" :class="classes" :data-toggle="single?'button':null">
+                <i :class="iconClasses" v-if="icon"></i>
+                <slot></slot>
+            </button>
 </template>
-<style lang="scss">
 
+<style lang="scss">
+    
 </style>
+
 <script>
     import {
         inArray
@@ -69,6 +71,10 @@
             rounded: {
                 type: Boolean,
                 default: false
+            },
+            submit: {
+                type: Boolean,
+                default: false
             }
         },
         computed: {
@@ -84,13 +90,16 @@
                         'dim': this['3D'] || this['3DLarge'],
                         'btn-large-dim': this['3DLarge'],
                         'btn-circle': this.circle,
-                        'btn-rounded': this.rounded,    
+                        'btn-rounded': this.rounded,
                         'active': this.active
                     }
                 ]
             },
             iconClasses() {
                 return ['fa', this.icon]
+            },
+            type() {
+                return this.submit ? 'submit' : 'button'
             }
         }
     }

@@ -4,6 +4,13 @@ import Breadcrumb from '@c/Breadcrumb'
 import { Button, ButtonGroup } from '@c/Button'
 import { DropDown, DropDownItem, DropDownDivider } from '@c/DropDown'
 import { Tabs, Tab } from '@c/Tabs'
+import Badge from '@c/Badge'
+import Label from '@c/Label'
+import ProgressBar from '@c/ProgressBar'
+import { Alert, AlertLink } from '@c/Alert'
+import Tooltip from '@c/Tooltip'
+import { Form, FormItem } from '@c/Form'
+import Input from '@c/Input'
 
 Vue.component('Panel', Panel)
 Vue.component('PanelHead', PanelHead)
@@ -19,4 +26,13 @@ Vue.component('DropDownItem', DropDownItem)
 Vue.component('DropDownDivider', DropDownDivider)
 Vue.component('Tabs', Tabs)
 Vue.component('Tab', Tab)
- 
+Vue.component('Badge', Badge)
+Vue.component('Label', Label)
+Vue.component('ProgressBar', ProgressBar)
+Vue.component('Alert', Alert)
+Vue.component('AlertLink', AlertLink)
+Vue.component('Tooltip', Tooltip)
+Vue.component('Tooltip', Tooltip)
+Vue.component('Form', Form)
+Vue.component('FormItem', FormItem)
+Vue.component('Input', Input)
