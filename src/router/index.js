@@ -73,6 +73,11 @@ export default new Router({
                     path: 'Tables/StaticTables',
                     name: 'StaticTables',
                     component: () => import('@v/Tables/StaticTables')
+                },
+                {
+                    path:'Layouts/Grids',
+                    name:'Grids',
+                    component: () => import('@v/Layouts/Grids')
                 }
             ]
         }

@@ -1,6 +1,7 @@
 <template>
     <div class="form-group">
-        <label class="control-label">{{label}}</label>
+        <label class="control-label" v-if="label">{{label}}</label>
+        <slot class="control-label" name="label"></slot>
         <slot></slot>
     </div>
 </template>

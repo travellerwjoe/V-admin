@@ -3565,7 +3565,7 @@ a:focus {
 .hr-line-solid {
   border-bottom: 1px solid #e7eaec;
   background-color: rgba(0, 0, 0, 0);
-  border-style: solid !important;
+  /* border-style: solid !important; */
   margin-top: 15px;
   margin-bottom: 15px;
 }

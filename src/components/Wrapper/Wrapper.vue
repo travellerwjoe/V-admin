@@ -161,6 +161,11 @@
                             name: 'jQuery Grid',
                             link: '/Tables/JQueryGrid'
                         }]
+                    },
+                    {
+                        name:'Grids',
+                        icon:'fa-laptop',
+                        link:'/Layouts/Grids'
                     }
                 ]
             }

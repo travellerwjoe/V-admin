@@ -1,8 +1,8 @@
 <template>
     <button :type="type" :class="classes" :data-toggle="single?'button':null">
-                <i :class="iconClasses" v-if="icon"></i>
-                <slot></slot>
-            </button>
+        <i :class="iconClasses" v-if="icon"></i>
+        <slot></slot>
+    </button>
 </template>
 
 <style lang="scss">

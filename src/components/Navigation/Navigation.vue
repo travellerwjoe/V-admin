@@ -21,14 +21,14 @@
                             IN+
                         </div>
                     </li>
-                    <li :class="{'active':menu.active}" v-for="menu in menus">
-                        <a href="javascript:;">
+                    <li :class="{'active':menu.active}" v-for="(menu,index) in menus" :key="index">
+                        <a href="javascript:;" @click="navigate(menu.link)">
                             <i :class="['fa',menu.icon]"></i> 
                             <span class="nav-label">{{menu.name}}</span> 
-                            <span class="fa arrow"></span>
+                            <span class="fa arrow" v-if="menu.children && menu.children.length"></span>
                         </a>
                         <ul class="nav nav-second-level" v-if="menu.children && menu.children.length">
-                            <li :class="{'active':child.active}" v-for="child in menu.children">
+                            <li :class="{'active':child.active}" v-for="(child,index) in menu.children" :key="index">
                                 <a href="javascript:;" @click="navigate(child.link)">{{child.name}}</a>
                             </li>
                         </ul>
@@ -260,6 +260,7 @@ export default {
     },
     methods:{
         navigate(view){
+            if(!view) return
             this.$emit('change',view)
         },
     },

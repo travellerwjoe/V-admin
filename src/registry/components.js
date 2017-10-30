@@ -9,8 +9,10 @@ import Label from '@c/Label'
 import ProgressBar from '@c/ProgressBar'
 import { Alert, AlertLink } from '@c/Alert'
 import Tooltip from '@c/Tooltip'
-import { Form, FormItem } from '@c/Form'
+import { Form, FormItem,FormLabel } from '@c/Form'
 import Input from '@c/Input'
+import { Row, Col } from '@c/Grid'
+import HrLine from '@c/HrLine'
 
 Vue.component('Panel', Panel)
 Vue.component('PanelHead', PanelHead)
@@ -32,7 +34,10 @@ Vue.component('ProgressBar', ProgressBar)
 Vue.component('Alert', Alert)
 Vue.component('AlertLink', AlertLink)
 Vue.component('Tooltip', Tooltip)
-Vue.component('Tooltip', Tooltip)
 Vue.component('Form', Form)
 Vue.component('FormItem', FormItem)
+Vue.component('FormLabel', FormLabel)
 Vue.component('Input', Input)
+Vue.component('Row', Row)
+Vue.component('Col', Col)
+Vue.component('HrLine', HrLine)
